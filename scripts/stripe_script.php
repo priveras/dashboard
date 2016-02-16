@@ -15,7 +15,7 @@ mysqli_query($conn, "DELETE FROM stripe");
 
 
 $row = 1;
-if (($handle = fopen("./uploads/stripe.csv", "r")) !== FALSE) {
+if (($handle = fopen("../uploads/stripe.csv", "r")) !== FALSE) {
     $flag = true;
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
 
